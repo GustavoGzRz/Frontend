@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewponit" content="width=device-widht, initial-scale-1.0">
+        <title>Burnt Cake</title>
+        <style>
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1{
+                color: rgb(80, 40, 3);
+                font-size: xx-large;
+                font-weight: bold;  
+            }
+            h2, h3 {
+                color: rgb(80, 40, 3);
+                font-size: larger;
+                font-weight: bold;    
+            }
+            p{
+                font-size: larger;
+            }
+            body{
+                background-color: #F0EEEB;
+            }
+            .center{
+                display: flex;
+                justify-content: center;
+    
+            }
+    
+    
+        </style>
+    </head>
+
+<body>
+    <div class="center"> 
+        <img src="LogoPasteleria.png" width="900" height="500" alt="Logo de pastelería">
+        </div> <hr>
+    <h2>Aquí se hace pedido</h2>
+    
+    <form action="pedido.js">
+        
+        <label for="Nombre">Ingresa tu nombre</label><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+        <br><br>
+        <label for="Numero">Ingrese un número de contacto</label><br>
+        <input type="text" id="Numero" name="Numero" placeholder="Télefono">
+        <br><br>
+        <label for="Correo">Ingrese un correo electrónico</label><br>
+        <input type="text" id="Correo" name="Correo" placeholder="Correo">
+        <br><br>
+        <label for="Descripción">Ingrese la descripción de su pedido (ej "Feliz Cumpleaños")</label><br>
+        <input type="text" id="Descripción" name="Descripción" placeholder="Descripción"><br>
+
+    </form>
+    
+    <br>
+    <h3>Pasteles</h3>
+    <input type="checkbox" id="3L" name="3L" value="3L" placeholder="Cantidad a solicitar">
+    <label for="for"> Pastel 3 Leches (Vainilla) </label><br>
+    <input type="number" name="3LCuantos" id="3LCuantos" placeholder="Cantidad a solicitar"> 
+    <br><br>
+    <input type="checkbox" id="3LC" name="3LC" value="3LC" placeholder="Cantidad a solicitar">
+    <label for="for"> Pastel 3 Leches (Chocolate) </label><br>
+    <input type="number" name="3LCCuantos" id="3LCCuantos" placeholder="Cantidad a solicitar"> 
+    <br><br>
+    <input type="checkbox" id="Mil" name="Mil" value="Mil" placeholder="Cantidad a solicitar">
+    <label for="for"> Pastel Mil Hojas </label> <br>
+    <input type="number" name="MilCuantos" id="MilCuantos" placeholder="Cantidad a solicitar"> 
+    <br><br>
+    <input type="checkbox" id="CC" name="CC" value="CC" placeholder="Cantidad a solicitar">
+    <label for="for"> Pastel Cookies and Cream </label> <br>
+    <input type="number" name="CCCuantos" id="CCCuantos" placeholder="Cantidad a solicitar"> 
+    <br><br>
+    <input type="checkbox" id="Irlandes" name="Irlandes" value="Irlandes" placeholder="Cantidad a solicitar">
+    <label for="for"> Pastel Irlandés </label> <br>
+    <input type="number" name="ICuantos" id="ICuantos" placeholder="Cantidad a solicitar"> 
+    <br><br>
+    <input type="checkbox" id="Coco" name="Coco" value="Coco" placeholder="Cantidad a solicitar">
+    <label for="for"> Pastel de Coco </label> <br>
+    <input type="number" name="CCCuantos" id="CCCuantos" placeholder="Cantidad a solicitar"> 
+    <br><br>
+    <input type="checkbox" id="Red" name="Red" value="Red" placeholder="Cantidad a solicitar">
+    <label for="for"> Pastel Red Velvet </label> <br>
+    <input type="number" name="RCuantos" id="RCuantos" placeholder="Cantidad a solicitar"> 
+    <br><br>
+    <br>
+
+    <h3>Pays</h3>
+    <input type="checkbox" id="3L" name="3L" value="3L" placeholder="Cantidad a solicitar">
+    <label for="for"> Pay de Queso </label><br>
+    <input type="number" name="3LCuantos" id="3LCuantos" placeholder="Cantidad a solicitar"> 
+    <br><br>
+    <input type="checkbox" id="3LC" name="3LC" value="3LC" placeholder="Cantidad a solicitar">
+    <label for="for"> Pay de Queso con moras </label><br>
+    <input type="number" name="3LCCuantos" id="3LCCuantos" placeholder="Cantidad a solicitar"> 
+    <br><br>
+    <input type="checkbox" id="Mil" name="Mil" value="Mil" placeholder="Cantidad a solicitar">
+    <label for="for"> Pay de Queso con frutos rojos </label> <br>
+    <input type="number" name="MilCuantos" id="MilCuantos" placeholder="Cantidad a solicitar"> 
+    <br><br>
+    <input type="checkbox" id="CC" name="CC" value="CC" placeholder="Cantidad a solicitar">
+    <label for="for"> Pay de Limón </label> <br>
+    <input type="number" name="CCCuantos" id="CCCuantos" placeholder="Cantidad a solicitar"> 
+    <br><br>
+    <input type="checkbox" id="Irlandes" name="Irlandes" value="Irlandes" placeholder="Cantidad a solicitar">
+    <label for="for"> Pay de Dulce de Leche </label> <br>
+    <input type="number" name="ICuantos" id="ICuantos" placeholder="Cantidad a solicitar"> 
+    <br><br>
+
+    <h3>Gelatinas</h3>
+    <input type="checkbox" id="3L" name="3L" value="3L" placeholder="Cantidad a solicitar">
+    <label for="for"> Gelatina de Yoghurt </label><br>
+    <input type="number" name="3LCuantos" id="3LCuantos" placeholder="Cantidad a solicitar"> 
+    <br><br>
+    <input type="checkbox" id="3LC" name="3LC" value="3LC" placeholder="Cantidad a solicitar">
+    <label for="for"> Gelatina de Frutas </label><br>
+    <input type="number" name="3LCCuantos" id="3LCCuantos" placeholder="Cantidad a solicitar"> 
+    <br><br>
+    <input type="checkbox" id="Mil" name="Mil" value="Mil" placeholder="Cantidad a solicitar">
+    <label for="for"> Gelatina de Mosaico </label> <br>
+    <input type="number" name="MilCuantos" id="MilCuantos" placeholder="Cantidad a solicitar"> 
+    <br><br>
+
+    <h2> Si deseas agregar algun ingrediente especial a uno de tus productos indicalo en la descripcion del 
+        pedido, a continuación marca que ingredientes extras deseas
+    </h2>
+    <input type="checkbox" id="Extras" name="Extras" value="Extras">
+    <label for="checkbox"> Fresas </label><br>
+    <input type="checkbox" id="Extras" name="Extras" value="Extras">
+    <label for="checkbox"> Duraznos </label><br>
+    <input type="checkbox" id="Extras" name="Extras" value="Extras">
+    <label for="checkbox"> Moras </label><br>
+    <input type="checkbox" id="Extras" name="Extras" value="Extras">
+    <label for="checkbox"> Chocolate liquido </label><br>
+    <input type="checkbox" id="Extras" name="Extras" value="Extras">
+    <label for="checkbox"> Chocolate blanco </label><br>
+    <input type="checkbox" id="Extras" name="Extras" value="Extras">
+    <label for="checkbox"> Mermelada de fresa </label><br>
+    <input type="checkbox" id="Extras" name="Extras" value="Extras">
+    <label for="checkbox"> Chispas de colores </label><br><br><br>
+<input type="reset">
+<input type="submit">
+<br><br><br><br>
+</body>
